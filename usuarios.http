@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/usuarios
+
+###
+
+GET http://localhost:3000/api/usuarios/2
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmRlZmluZWQiOiJndmVyYUB1di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJHdWlsbGVybW8gVmVyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE0ODA0NTM4LCJleHAiOjE3MTQ4MDU3Mzh9.9dTEjSzEjFw4hIo0-XpxYvBw3l5pegDfocTZBM7sxHI
+
+{
+    "email": "patito@uv.mx",
+    "password": "patito",
+    "nombre": "Un nuevo usuario pato",
+    "rol": "Usuario"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/patito@uv.mx
+Content-Type: application/json
+
+{
+    "nombre": "Usuario pato editado",
+    "rol": "Usuario"
+}
+
+###
+
+DELETE http://localhost:3000/api/usuarios/gvera@uv.mx

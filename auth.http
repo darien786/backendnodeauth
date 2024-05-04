@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/categorias
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmRlZmluZWQiOiJwYXRpdG9AdXYubXgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVW4gbnVldm8gdXN1YXJpbyBwYXRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXN1YXJpbyIsImlzcyI6IlNlcnZpZG9yRmVpSldUIiwiYXVkIjoiQ2xpZW50ZXNGZWlKV1QiLCJpYXQiOjE3MTQ4MDUwNzcsImV4cCI6MTcxNDgwNjI3N30.L3f9hshwlILfVM8jGIrJsSQ6PABmgmJZ8DA9f5G3cjo
+
+###
+
+GET http://localhost:3000/api/peliculas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmRlZmluZWQiOiJndmVyYUB1di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJHdWlsbGVybW8gVmVyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE0ODA0NTM4LCJleHAiOjE3MTQ4MDU3Mzh9.9dTEjSzEjFw4hIo0-XpxYvBw3l5pegDfocTZBM7sxHI
+
+###
+
+POST http://localhost:3000/api/auth
+Content-Type: application/json
+
+{
+    "email": "patito@uv.mx",
+    "password": "patito"
+}
